@@ -34,4 +34,49 @@
             border-radius: $mobile__button-radius;
         }
     }
+
+    .is-timer {
+        .level-item {
+            margin: 0;
+
+            + .level-item {
+                border-left: 1px solid white;
+            }
+        }
+        .timer-label {
+            font-family: 'Cormorant Garamond';
+            font-style: italic;
+            
+            @include tablet {
+                margin-right: 38px;
+            }
+
+            @include mobile {
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+        }
+
+        .digits, .title {
+            font-family: 'Lato-Light';
+            font-weight: 100;
+        }
+
+        .digits {
+            font-size: 60px;       
+            
+            @include mobile {
+                font-size: 40px;
+            }     
+        }
+
+        .title {
+            font-size: 15px;
+            
+            @include mobile {
+                font-size: 11px;
+            }     
+        }
+    }
+
 }

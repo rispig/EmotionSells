@@ -66,6 +66,10 @@ section {
                         right: calc(-1 * #{$mobile__content-margin});
                     }
                 }
+
+                .columns {
+                    height: 100%;
+                }
             }
         }
     }

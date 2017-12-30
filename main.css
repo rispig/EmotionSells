@@ -633,7 +633,7 @@ table th {
   font-size: 24px !important; }
 
 .is-size-4 {
-  font-size: 1.5rem !important; }
+  font-size: 19px !important; }
 
 .is-size-5 {
   font-size: 1.25rem !important; }
@@ -655,7 +655,7 @@ table th {
     font-size: 24px !important; }
 
   .is-size-4-mobile {
-    font-size: 1.5rem !important; }
+    font-size: 19px !important; }
 
   .is-size-5-mobile {
     font-size: 1.25rem !important; }
@@ -676,7 +676,7 @@ table th {
     font-size: 24px !important; }
 
   .is-size-4-tablet {
-    font-size: 1.5rem !important; }
+    font-size: 19px !important; }
 
   .is-size-5-tablet {
     font-size: 1.25rem !important; }
@@ -697,7 +697,7 @@ table th {
     font-size: 24px !important; }
 
   .is-size-4-touch {
-    font-size: 1.5rem !important; }
+    font-size: 19px !important; }
 
   .is-size-5-touch {
     font-size: 1.25rem !important; }
@@ -718,7 +718,7 @@ table th {
     font-size: 24px !important; }
 
   .is-size-4-desktop {
-    font-size: 1.5rem !important; }
+    font-size: 19px !important; }
 
   .is-size-5-desktop {
     font-size: 1.25rem !important; }
@@ -739,7 +739,7 @@ table th {
     font-size: 24px !important; }
 
   .is-size-4-widescreen {
-    font-size: 1.5rem !important; }
+    font-size: 19px !important; }
 
   .is-size-5-widescreen {
     font-size: 1.25rem !important; }
@@ -760,7 +760,7 @@ table th {
     font-size: 24px !important; }
 
   .is-size-4-fullhd {
-    font-size: 1.5rem !important; }
+    font-size: 19px !important; }
 
   .is-size-5-fullhd {
     font-size: 1.25rem !important; }
@@ -1924,7 +1924,7 @@ a.box:active {
   .button.is-medium {
     font-size: 1.25rem; }
   .button.is-large {
-    font-size: 1.5rem; }
+    font-size: 19px; }
   .button[disabled] {
     background-color: white;
     border-color: #dbdbdb;
@@ -2134,7 +2134,7 @@ a.box:active {
 .content.is-medium {
   font-size: 1.25rem; }
 .content.is-large {
-  font-size: 1.5rem; }
+  font-size: 19px; }
 
 .input,
 .textarea {
@@ -2316,7 +2316,7 @@ a.box:active {
     font-size: 1.25rem; }
   .input.is-large,
   .textarea.is-large {
-    font-size: 1.5rem; }
+    font-size: 19px; }
   .input.is-fullwidth,
   .textarea.is-fullwidth {
     display: block;
@@ -2505,7 +2505,7 @@ a.box:active {
   .select.is-medium {
     font-size: 1.25rem; }
   .select.is-large {
-    font-size: 1.5rem; }
+    font-size: 19px; }
   .select.is-disabled::after {
     border-color: #7a7a7a; }
   .select.is-fullwidth {
@@ -2533,7 +2533,7 @@ a.box:active {
   .select.is-loading.is-medium:after {
     font-size: 1.25rem; }
   .select.is-loading.is-large:after {
-    font-size: 1.5rem; }
+    font-size: 19px; }
 
 .file {
   -webkit-touch-callout: none;
@@ -2712,7 +2712,7 @@ a.box:active {
     .file.is-medium .file-icon .fa {
       font-size: 21px; }
   .file.is-large {
-    font-size: 1.5rem; }
+    font-size: 19px; }
     .file.is-large .file-icon .fa {
       font-size: 28px; }
   .file.has-name .file-cta {
@@ -2862,7 +2862,7 @@ a.box:active {
   .label.is-medium {
     font-size: 1.25rem; }
   .label.is-large {
-    font-size: 1.5rem; }
+    font-size: 19px; }
 
 .help {
   display: block;
@@ -2993,7 +2993,7 @@ a.box:active {
       font-size: 1.25rem;
       padding-top: 0.375em; }
     .field-label.is-large {
-      font-size: 1.5rem;
+      font-size: 19px;
       padding-top: 0.375em; } }
 
 .field-body .field .field {
@@ -3032,7 +3032,7 @@ a.box:active {
   .control.has-icon .input.is-medium + .icon {
     font-size: 1.25rem; }
   .control.has-icon .input.is-large + .icon {
-    font-size: 1.5rem; }
+    font-size: 19px; }
   .control.has-icon:not(.has-icon-right) .icon {
     left: 0; }
   .control.has-icon:not(.has-icon-right) .input {
@@ -3056,7 +3056,7 @@ a.box:active {
   .control.has-icons-left .input.is-large ~ .icon,
   .control.has-icons-left .select.is-large ~ .icon, .control.has-icons-right .input.is-large ~ .icon,
   .control.has-icons-right .select.is-large ~ .icon {
-    font-size: 1.5rem; }
+    font-size: 19px; }
   .control.has-icons-left .icon, .control.has-icons-right .icon {
     color: #dbdbdb;
     height: 2.25em;
@@ -3094,7 +3094,7 @@ a.box:active {
   .control.is-loading.is-medium:after {
     font-size: 1.25rem; }
   .control.is-loading.is-large:after {
-    font-size: 1.5rem; }
+    font-size: 19px; }
 
 .icon {
   align-items: center;
@@ -3301,7 +3301,7 @@ a.box:active {
   .progress.is-medium {
     height: 1.25rem; }
   .progress.is-large {
-    height: 1.5rem; }
+    height: 19px; }
 
 .table {
   background-color: white;
@@ -3574,7 +3574,7 @@ a.tag:hover {
   .title.is-3 {
     font-size: 24px; }
   .title.is-4 {
-    font-size: 1.5rem; }
+    font-size: 19px; }
   .title.is-5 {
     font-size: 1.25rem; }
   .title.is-6 {
@@ -3599,7 +3599,7 @@ a.tag:hover {
   .subtitle.is-3 {
     font-size: 24px; }
   .subtitle.is-4 {
-    font-size: 1.5rem; }
+    font-size: 19px; }
   .subtitle.is-5 {
     font-size: 1.25rem; }
   .subtitle.is-6 {
@@ -3773,7 +3773,7 @@ a.tag:hover {
   .breadcrumb.is-medium {
     font-size: 1.25rem; }
   .breadcrumb.is-large {
-    font-size: 1.5rem; }
+    font-size: 19px; }
   .breadcrumb.has-arrow-separator li + li::before {
     content: "→"; }
   .breadcrumb.has-bullet-separator li + li::before {
@@ -4017,7 +4017,7 @@ a.dropdown-item {
   .menu.is-medium {
     font-size: 1.25rem; }
   .menu.is-large {
-    font-size: 1.5rem; }
+    font-size: 19px; }
 
 .menu-list {
   line-height: 1.25; }
@@ -4063,7 +4063,7 @@ a.dropdown-item {
   .message.is-medium {
     font-size: 1.25rem; }
   .message.is-large {
-    font-size: 1.5rem; }
+    font-size: 19px; }
   .message.is-white {
     background-color: white; }
     .message.is-white .message-header {
@@ -4309,7 +4309,7 @@ a.dropdown-item {
   color: #363636;
   flex-grow: 1;
   flex-shrink: 0;
-  font-size: 1.5rem;
+  font-size: 19px;
   line-height: 1; }
 
 .modal-card-foot {
@@ -5044,7 +5044,7 @@ a.navbar-link.is-active {
   .pagination.is-medium {
     font-size: 1.25rem; }
   .pagination.is-large {
-    font-size: 1.5rem; }
+    font-size: 19px; }
 
 .pagination,
 .pagination-list {
@@ -5378,7 +5378,7 @@ label.panel-block {
   .tabs.is-medium {
     font-size: 1.25rem; }
   .tabs.is-large {
-    font-size: 1.5rem; }
+    font-size: 19px; }
 
 .column {
   display: block;
@@ -6844,7 +6844,7 @@ label.panel-block {
   font-size: 24px !important; }
 
 .is-size-4 {
-  font-size: 1.5rem !important; }
+  font-size: 19px !important; }
 
 .is-size-5 {
   font-size: 1.25rem !important; }
@@ -6866,7 +6866,7 @@ label.panel-block {
     font-size: 24px !important; }
 
   .is-size-4-mobile {
-    font-size: 1.5rem !important; }
+    font-size: 19px !important; }
 
   .is-size-5-mobile {
     font-size: 1.25rem !important; }
@@ -6887,7 +6887,7 @@ label.panel-block {
     font-size: 24px !important; }
 
   .is-size-4-tablet {
-    font-size: 1.5rem !important; }
+    font-size: 19px !important; }
 
   .is-size-5-tablet {
     font-size: 1.25rem !important; }
@@ -6908,7 +6908,7 @@ label.panel-block {
     font-size: 24px !important; }
 
   .is-size-4-touch {
-    font-size: 1.5rem !important; }
+    font-size: 19px !important; }
 
   .is-size-5-touch {
     font-size: 1.25rem !important; }
@@ -6929,7 +6929,7 @@ label.panel-block {
     font-size: 24px !important; }
 
   .is-size-4-desktop {
-    font-size: 1.5rem !important; }
+    font-size: 19px !important; }
 
   .is-size-5-desktop {
     font-size: 1.25rem !important; }
@@ -6950,7 +6950,7 @@ label.panel-block {
     font-size: 24px !important; }
 
   .is-size-4-widescreen {
-    font-size: 1.5rem !important; }
+    font-size: 19px !important; }
 
   .is-size-5-widescreen {
     font-size: 1.25rem !important; }
@@ -6971,7 +6971,7 @@ label.panel-block {
     font-size: 24px !important; }
 
   .is-size-4-fullhd {
-    font-size: 1.5rem !important; }
+    font-size: 19px !important; }
 
   .is-size-5-fullhd {
     font-size: 1.25rem !important; }
@@ -7461,6 +7461,33 @@ a.has-text-danger:hover, a.has-text-danger:focus {
       height: 40px;
       width: 255px;
       border-radius: 10px; } }
+#section-1 .is-timer .level-item {
+  margin: 0; }
+  #section-1 .is-timer .level-item + .level-item {
+    border-left: 1px solid white; }
+#section-1 .is-timer .timer-label {
+  font-family: 'Cormorant Garamond';
+  font-style: italic; }
+  @media screen and (min-width: 769px), print {
+    #section-1 .is-timer .timer-label {
+      margin-right: 38px; } }
+  @media screen and (max-width: 768px) {
+    #section-1 .is-timer .timer-label {
+      margin-top: 10px;
+      margin-bottom: 5px; } }
+#section-1 .is-timer .digits, #section-1 .is-timer .title {
+  font-family: 'Lato-Light';
+  font-weight: 100; }
+#section-1 .is-timer .digits {
+  font-size: 60px; }
+  @media screen and (max-width: 768px) {
+    #section-1 .is-timer .digits {
+      font-size: 40px; } }
+#section-1 .is-timer .title {
+  font-size: 15px; }
+  @media screen and (max-width: 768px) {
+    #section-1 .is-timer .title {
+      font-size: 11px; } }
 
 html, body {
   font-family: Lato; }
@@ -7502,6 +7529,8 @@ section {
           left: calc(-1 * calc(calc(100vw - 750px) / 2)); }
         section .columns.has-timer > .column.is-timer::after {
           right: calc(-1 * calc(calc(100vw - 750px) / 2)); } }
+    section .columns.has-timer > .column.is-timer .columns {
+      height: 100%; }
 
 .dark-background *, .red-background *, .btn *, .blue-background * {
   color: white !important; }
