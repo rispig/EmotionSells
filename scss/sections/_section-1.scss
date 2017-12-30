@@ -1,0 +1,37 @@
+#section-1 {
+    $title-margin: 40px;
+    $margin: 30px;
+    
+    $mobile__title-margin: $title-margin;
+    $mobile__margin: $margin;
+
+    h2.title {
+        margin-top: $title-margin;
+        @include mobile {
+            margin-top: $mobile__title-margin;
+        }
+    }
+    .video-container {
+        margin-top: $margin;
+        margin-bottom: $margin;
+        
+        @include mobile {
+            margin-top: $mobile__margin;
+            margin-bottom: $mobile__margin;
+        }
+    }
+
+    button.btn {
+        margin-bottom: $margin;
+        height: $button-height;
+        width: $button-width;
+        border-radius: $button-radius;
+        
+        @include mobile{
+            margin-bottom: $mobile__margin;
+            height: $mobile__button-height;
+            width: $mobile__button-width;
+            border-radius: $mobile__button-radius;
+        }
+    }
+}

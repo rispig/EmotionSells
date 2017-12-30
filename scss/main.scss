@@ -1,0 +1,110 @@
+@import 'vendor/normalize/normalize';
+@import 'variables';
+@import 'vendor/bulma/bulma';
+@import 'colors';
+@import 'vendor/bulma/sass/base/helpers';
+
+@import 'sections/_all';
+html, body {
+    font-family: Lato;
+}
+
+section {
+    @include tablet {
+        height: 100vh;
+    }
+    padding: 0 $content-margin;
+
+    @include mobile {
+        padding: 0 $mobile__content-margin;
+    }
+
+    .columns {
+        &.is-gapless {
+            margin-bottom: 0 !important;
+        }
+        &.has-timer {
+            > .column:first-child {
+                @include tablet {
+                    height: calc(100vh - #{$timer-height});
+                }
+            }
+            > .column.is-timer {
+                height: $timer-height;
+                background-color: $timer-bg;
+                position: relative;
+
+                &::before, &::after {
+                    width: $content-margin;
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    background-color: $timer-bg;
+                    height: 100%;
+
+                }
+                &::before {
+                    left: calc(-1 * #{$content-margin});
+                }
+
+                &::after {
+                    right: calc(-1 * #{$content-margin});
+                }
+
+                @include mobile {
+                    height: $mobile__timer-height;
+                    
+                    &::before, &::after {
+                        width: $mobile__content-margin;
+                    }
+                    
+                    &::before {
+                        left: calc(-1 * #{$mobile__content-margin});
+                    }
+    
+                    &::after {
+                        right: calc(-1 * #{$mobile__content-margin});
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+.dark-background {
+    * {
+        color: white !important;
+    }
+}
+
+.light-background {
+    * {
+        color: black !important;
+    }
+}
+
+.red-background {
+    @extend .dark-background;
+    
+    background-color: $red;
+}
+
+.blue-background {
+    @extend .dark-background;
+
+    background-color: $blue;
+}
+
+.title {
+    font-family: 'Lato-Medium';
+}
+
+.btn {
+    @extend .red-background;
+
+    font-family: 'Lato-Medium';
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
