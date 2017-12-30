@@ -6,12 +6,12 @@
 
 @import 'sections/_all';
 html, body {
-    font-family: Lato;
+    font-family: Lato, sans-serif;
 }
 
 section {
     @include tablet {
-        height: 100vh;
+        min-height: 100vh;
     }
     padding: 0 $content-margin;
 
@@ -78,13 +78,13 @@ section {
 
 .dark-background {
     * {
-        color: white !important;
+        color: white;
     }
 }
 
 .light-background {
     * {
-        color: black !important;
+        color: $black;
     }
 }
 
@@ -101,13 +101,13 @@ section {
 }
 
 .title {
-    font-family: 'Lato-Medium';
+    font-family: 'Lato';
 }
 
 .btn {
     @extend .red-background;
 
-    font-family: 'Lato-Medium';
+    font-weight: 500;
     border: 0;
     outline: none;
     cursor: pointer;
