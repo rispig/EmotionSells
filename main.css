@@ -7603,7 +7603,8 @@ a.has-text-danger:hover, a.has-text-danger:focus {
         margin: 50px; } }
 
 html, body {
-  font-family: Lato, sans-serif; }
+  font-family: Lato, sans-serif;
+  overflow-x: hidden; }
 
 section {
   padding: 0 calc(calc(100vw - 1366px) / 2); }
