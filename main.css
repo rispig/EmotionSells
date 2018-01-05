@@ -7476,7 +7476,6 @@ a.has-text-danger:hover, a.has-text-danger:focus {
       margin-top: 10px;
       margin-bottom: 5px; } }
 #section-1 .is-timer .digits, #section-1 .is-timer .title {
-  font-family: 'Lato-Light';
   font-weight: 100; }
 #section-1 .is-timer .digits {
   font-size: 60px; }
@@ -7491,16 +7490,41 @@ a.has-text-danger:hover, a.has-text-danger:focus {
 
 #section-2 {
   padding-top: 80px;
-  font-family: 'Lato'; }
+  padding-bottom: 80px; }
   @media screen and (max-width: 768px) {
     #section-2 {
-      padding-top: 40px; } }
+      padding-top: 40px;
+      padding-bottom: 40px; } }
   #section-2 strong {
     font-weight: 900; }
   #section-2 .title {
     color: #147bbc; }
     #section-2 .title * {
       color: #147bbc; }
+
+#section-3 .title {
+  color: white; }
+@media screen and (min-width: 769px), print {
+  #section-3 {
+    background: url(assets/img/section-3/desktop.png) center/cover;
+    padding: 138px 0 0 244px; } }
+  @media only screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 769px) and (-moz-min-device-pixel-ratio: 1.5), only screen and (min-width: 769px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 769px) and (min-device-pixel-ratio: 1.5) {
+    #section-3 {
+      background: url(assets/img/section-3/desktop@2x.png) center/cover; } }
+@media screen and (min-width: 769px), print {
+    #section-3 .content {
+      width: 423px; } }
+@media screen and (max-width: 768px) {
+  #section-3 {
+    background: url(assets/img/section-3/mobile.png) center/cover; } }
+  @media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 768px) and (-moz-min-device-pixel-ratio: 1.5), only screen and (max-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (max-width: 768px) and (min-device-pixel-ratio: 1.5) {
+    #section-3 {
+      background: url(assets/img/section-3/mobile@2x.png) 75% center/cover; } }
+@media screen and (max-width: 768px) {
+    #section-3 .content {
+      background-color: #147bbd;
+      opacity: 0.85;
+      padding: 50px 15%; } }
 
 html, body {
   font-family: Lato, sans-serif; }
