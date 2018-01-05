@@ -27,11 +27,11 @@
         only screen and (-moz-min-device-pixel-ratio: 1.5), 
         only screen and (-o-min-device-pixel-ratio: 3/2), 
         only screen and (min-device-pixel-ratio: 1.5) {
-            background: url(assets/img/section-3/mobile@2x.png) 75% center/cover;
+            background: url(assets/img/section-3/mobile@2x.png) center/cover;
         }
 
         .content {
-            background-color: #147bbd;
+            background-color: $blue;
             opacity: 0.85;
             padding: 50px 15%;
         }

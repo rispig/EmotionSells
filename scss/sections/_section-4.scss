@@ -1,0 +1,116 @@
+#section-4 {
+    $spacing: 100px;
+    $mobile__spacing: $spacing / 2;
+    
+    padding-top: $spacing;
+    padding-bottom: $spacing;
+    
+    @include mobile {
+        padding-top: $mobile__spacing;
+        padding-bottom: $mobile__spacing;
+        
+    }
+
+    .title, .circle-img {
+        margin-bottom: $spacing;
+
+        &.circle-img {
+            @include mobile {
+                margin-top: inherit;
+                margin-bottom: inherit;
+            }
+        }
+        
+        @include mobile {
+            margin: $mobile__spacing;
+        }
+        
+        u, div {
+            color: $blue;
+        }
+    }
+
+    .text-container {
+        @include mobile {
+            margin-top: $mobile__spacing;
+            padding: 0 45px;
+        }
+    }
+
+    .affect-arrow-container {        
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div {
+            font-family: 'Cormorant Garamond';
+            font-style: italic;
+            font-weight: 500;
+            font-size: $size-3;
+
+            @include tablet {
+                margin-top: -50px;
+            }
+        }
+        .arrow-img {
+            margin: 0 auto;
+            background: url(assets/img/section-4/arrow-left.svg) no-repeat;
+            width: 46px;
+            height: 20px;
+            
+            @include mobile {
+                background: url(assets/img/section-4/arrow-down.svg) no-repeat;
+                height: 46px;
+                width: 20px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .damasio-container {
+        margin-top: $spacing;
+
+        @include mobile {
+            margin-top: -($spacing/5);
+            padding: 0 $mobile__spacing;
+        }
+
+        div:not(.damasio) {
+            @include tablet {
+                order: 1;
+            }
+        }
+    
+        .damasio {
+            @include tablet {
+                order: 2;
+            }
+            @include mobile {
+                height: 248px;
+            }
+            
+            background: url(assets/img/section-4/damasio.png) center/cover;
+            
+            @media only screen and (-webkit-min-device-pixel-ratio: 1.5), 
+            only screen and (-moz-min-device-pixel-ratio: 1.5), 
+            only screen and (-o-min-device-pixel-ratio: 3/2), 
+            only screen and (min-device-pixel-ratio: 1.5) {
+                background: url(assets/img/section-4/damasio@2x.png) center/contain no-repeat;
+            }
+        }
+    }
+
+    h3.title {
+        @include mobile {
+            margin: $mobile__spacing;
+        }
+
+        margin: $spacing 0;
+        color: $blue;
+        font-style: italic;
+        font-weight: bold;
+    }
+}

@@ -1,10 +1,12 @@
 #section-2 {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    $padding: 80px;
+
+    padding-top: $padding;
+    padding-bottom: $padding;
     
     @include mobile {
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: $padding / 2;
+        padding-bottom: $padding / 2;
     }
 
     strong {
