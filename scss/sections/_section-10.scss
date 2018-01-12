@@ -1,0 +1,23 @@
+#section-10 {
+    padding: 100px 0;
+
+    @include mobile {
+        padding: 50px 0;
+    }
+
+    >.columns + .columns {
+        @include tablet {
+            margin-top: 100px;
+        }
+    }
+
+    h3 strong, p strong {
+        font-weight: 900;
+    }
+
+    img {
+        @include tablet {
+            width: 180px;
+        }
+    }
+}
