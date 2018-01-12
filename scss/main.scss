@@ -1,10 +1,11 @@
-@import 'vendor/normalize/normalize';
-@import 'variables';
-@import 'vendor/bulma/bulma';
-@import 'colors';
-@import 'vendor/bulma/sass/base/helpers';
+@import "vendor/normalize/normalize";
+@import "variables";
+@import "vendor/bulma/bulma";
+@import "colors";
+@import "vendor/bulma/sass/base/helpers";
 
-@import 'sections/_all';
+@import "sections/all";
+
 html, body {
     font-family: Lato, sans-serif;
     overflow-x: hidden;
@@ -14,72 +15,73 @@ section {
     @include tablet {
         min-height: 100vh;
     }
+
     padding: 0 $content-margin;
 
     @include mobile {
-        padding: 0 $mobile__content-margin;
+        padding: 0 $mobile-content-margin;
     }
 
     .columns {
         &.is-gapless {
             margin-bottom: 0 !important;
         }
-        &.has-timer {
-            > .column:first-child {
-                @include tablet {
-                    height: calc(100vh - #{$timer-height});
-                }
+
+        &.has-timer  > .column:first-child {
+            @include tablet {
+                height: calc(100vh - #{$timer-height});
             }
-            > .column.is-timer {
-                height: $timer-height;
-                background-color: $timer-bg;
-                position: relative;
+        }
 
-                &::before, &::after {
-                    width: $content-margin;
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    background-color: $timer-bg;
-                    height: 100%;
+        &.has-timer > .column.is-timer {
+            height: $timer-height;
+            background-color: $timer-bg;
+            position: relative;
 
-                }
-                &::before {
-                    left: calc(-1 * #{$content-margin});
-                }
+            @include mobile {
+                height: $mobile-timer-height;
+            }
+        }
 
-                &::after {
-                    right: calc(-1 * #{$content-margin});
-                }
+        &.has-timer > .column.is-timer .columns {
+            height: 100%;
+        }
 
-                @include mobile {
-                    height: $mobile__timer-height;
-                    
-                    &::before, &::after {
-                        width: $mobile__content-margin;
-                    }
-                    
-                    &::before {
-                        left: calc(-1 * #{$mobile__content-margin});
-                    }
-    
-                    &::after {
-                        right: calc(-1 * #{$mobile__content-margin});
-                    }
-                }
+        &.has-timer > .column.is-timer::before {
+            width: $content-margin;
+            content: "";
+            position: absolute;
+            top: 0;
+            background-color: $timer-bg;
+            height: 100%;
+            left: calc(-1 * #{$content-margin});
 
-                .columns {
-                    height: 100%;
-                }
+            @include mobile {
+                width: $mobile-content-margin;
+                left: calc(-1 * #{$mobile-content-margin});
+            }
+        }
+
+        &.has-timer > .column.is-timer::after {
+            width: $content-margin;
+            content: "";
+            position: absolute;
+            top: 0;
+            background-color: $timer-bg;
+            height: 100%;
+            right: calc(-1 * #{$content-margin});
+
+            @include mobile {
+                width: $mobile-content-margin;
+                right: calc(-1 * #{$mobile-content-margin});
             }
         }
     }
-    
 }
 
 .dark-background {
     * {
-        color: white;
+        color: $white;
     }
 }
 
@@ -91,7 +93,7 @@ section {
 
 .red-background {
     @extend .dark-background;
-    
+
     background-color: $red;
 }
 
@@ -102,7 +104,7 @@ section {
 }
 
 .title {
-    font-family: 'Lato';
+    font-family: "Lato";
 }
 
 .btn {
@@ -113,3 +115,4 @@ section {
     outline: none;
     cursor: pointer;
 }
+
