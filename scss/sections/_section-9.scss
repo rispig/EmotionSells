@@ -1,0 +1,40 @@
+#section-9 {
+    background-color: $grey;
+    padding: 100px 0;
+
+    @include mobile {
+        padding: 50px 0;
+    }
+
+    .columns  + .columns {
+        margin-top: 50px;
+    }
+
+    .column {
+        background-color: $white;
+
+        p {
+            background-color: $light-blue;
+            padding: 10px 20px;
+            color: $white;
+            margin: 35px 5% 0;
+        }
+
+        ul {
+            text-align: left;
+            margin: 0 15% 35px;
+        }
+
+        li + li {
+            margin-top: 1em;
+        }
+
+        ul.no-gap {
+            margin-top: 1em;
+        }
+
+        ul.no-gap li + li {
+            margin-top: 0;
+        }
+    }
+}
