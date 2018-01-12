@@ -92,15 +92,6 @@
             @include mobile {
                 height: 248px;
             }
-
-            background: url("assets/img/section-4/damasio.png") center / cover;
-
-            @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-            only screen and (-moz-min-device-pixel-ratio: 1.5),
-            only screen and (-o-min-device-pixel-ratio: 3/2),
-            only screen and (min-device-pixel-ratio: 1.5) {
-                background: url("assets/img/section-4/damasio@2x.png") center / contain no-repeat;
-            }
         }
     }
 
@@ -109,7 +100,7 @@
             margin: $mobile-spacing;
         }
 
-        margin: $spacing 0;
+        margin: $spacing 0 0;
         color: $blue;
         font-style: italic;
         font-weight: bold;

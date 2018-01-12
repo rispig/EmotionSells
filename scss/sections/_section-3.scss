@@ -4,13 +4,10 @@
     }
 
     @include tablet {
-        background: url("assets/img/section-3/desktop.png") center / cover;
+        background: url("assets/img/section-3/desktop.png") $blue center / cover;
 
-        @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-        only screen and (-moz-min-device-pixel-ratio: 1.5),
-        only screen and (-o-min-device-pixel-ratio: 3/2),
-        only screen and (min-device-pixel-ratio: 1.5) {
-            background: url("assets/img/section-3/desktop@2x.png") center / cover;
+        @include image-2x {
+            background: url("assets/img/section-3/desktop@2x.png") $blue center / cover;
         }
 
         padding: 138px 0 0 244px;
@@ -21,13 +18,10 @@
     }
 
     @include mobile {
-        background: url("assets/img/section-3/mobile.png") center / cover;
+        background: url("assets/img/section-3/mobile.png") $blue center / cover;
 
-        @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-        only screen and (-moz-min-device-pixel-ratio: 1.5),
-        only screen and (-o-min-device-pixel-ratio: 3/2),
-        only screen and (min-device-pixel-ratio: 1.5) {
-            background: url("assets/img/section-3/mobile@2x.png") center / cover;
+        @include image-2x {
+            background: url("assets/img/section-3/mobile@2x.png") $blue center / cover;
         }
 
         .content {

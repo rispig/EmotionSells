@@ -1,0 +1,50 @@
+#section-5 {
+    padding: 100px 0;
+
+    @include tablet {
+        background: url("assets/img/section-5/desktop.jpg") center / cover;
+
+        @include image-2x {
+            background: url("assets/img/section-5/desktop@2x.jpg") center / cover;
+        }
+    }
+
+    @include mobile {
+        position: relative;
+        background: url("assets/img/section-5/mobile.jpg") center / 100% 100% no-repeat;
+
+        @include image-2x {
+            background: url("assets/img/section-5/mobile@2x.jpg") center / 100% 100% no-repeat;
+        }
+
+        >div:first-child {
+            opacity: 0.9;
+            background-color: #f4f4f6;
+        }
+    }
+
+    .title {
+        color: $blue;
+    }
+
+    strong {
+        font-weight: 900;
+    }
+
+    .last-title {
+        margin-top: 2em;
+    }
+
+    ul {
+        list-style-image: url("assets/img/common/tick-desktop.png");
+        margin-left: 32px;
+
+        @include image-2x {
+            list-style-image: url("assets/img/common/tick-desktop@2x.png");
+        }
+
+        &:first-of-type li + li {
+            margin-top: 1em;
+        }
+    }
+}
