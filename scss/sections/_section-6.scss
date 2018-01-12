@@ -1,0 +1,46 @@
+#section-6 {
+
+    padding: 100px 0;
+
+    @include mobile {
+        padding: 50px 0;
+    }
+
+    background: linear-gradient(250deg,
+    $black 15%,
+    rgba($black, 0.9),
+    rgba($dark-blue, 0.9),
+    $dark-blue 85%);
+
+    h1 strong {
+        font-weight: 900;
+    }
+
+    p strong {
+        font-weight: 600;
+
+        &.bolder {
+            font-weight: 900;
+        }
+    }
+
+    .divider {
+        background-color: $light-blue;
+        height: 5px;
+        margin: 25px 0;
+    }
+
+    ul {
+        margin: 0 15%;
+
+        li + li {
+            margin-top: 1em;
+        }
+    }
+
+    .mac-container {
+        @include tablet {
+            margin-right: 60px;
+        }
+    }
+}

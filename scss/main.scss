@@ -77,6 +77,15 @@ section {
             }
         }
     }
+
+    ul {
+        list-style-image: url("assets/img/common/tick-desktop.png");
+        margin-left: 32px;
+
+        @include image-2x {
+            list-style-image: url("assets/img/common/tick-desktop@2x.png");
+        }
+    }
 }
 
 .dark-background {
