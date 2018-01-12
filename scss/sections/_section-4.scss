@@ -97,7 +97,7 @@
 
     h3.title {
         @include mobile {
-            margin: $mobile-spacing;
+            margin: $mobile-spacing $mobile-spacing 0;
         }
 
         margin: $spacing 0 0;

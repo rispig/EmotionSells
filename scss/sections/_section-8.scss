@@ -1,0 +1,24 @@
+#section-8 {
+    padding: 100px 0;
+
+    @include mobile {
+        padding: 50px 15%;
+    }
+
+    background-color: $light-blue;
+    text-align: center;
+
+    h1 {
+        font-weight: 900;
+    }
+
+    img {
+        @include tablet {
+            width: 733px;
+        }
+
+        @include mobile {
+            width: 528px;
+        }
+    }
+}
