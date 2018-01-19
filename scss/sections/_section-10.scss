@@ -2,8 +2,11 @@
 #section-12,
 #section-13,
 #section-14,
+#section-14-b,
 #section-15,
-#section-16 {
+#section-15-b,
+#section-16,
+#section-17 {
     padding: $spacing 0;
 
     @include mobile {
@@ -20,7 +23,7 @@
         font-weight: 900;
     }
 
-    img {
+    #section-10 img {
         @include tablet {
             width: 180px;
         }

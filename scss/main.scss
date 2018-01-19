@@ -107,6 +107,12 @@ section {
 
         .level-item {
             margin: 0;
+
+        }
+
+        .level-item * {
+            font-family: Lato-Thin, sans-serif;
+            font-weight: 100;
         }
 
         .timer-label {
@@ -147,7 +153,14 @@ section {
 
     .is-timer .level-item + .level-item {
         border-left: 1px solid $white;
+        padding-left: 0.75rem;
     }
+}
+
+.valign-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .dark-background {

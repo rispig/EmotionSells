@@ -1,0 +1,22 @@
+#section-17 {
+    margin-bottom: 219px;
+
+    .one-on-one img {
+        width: 380px;
+    }
+
+    .column.tick {
+        img {
+            height: 15px;
+        }
+    }
+
+    .is-timer {
+        @extend .blue-background;
+        position: absolute;
+        bottom: -219px;
+        width: 100%;
+        z-index: 10;
+        height: 219px;
+    }
+}
