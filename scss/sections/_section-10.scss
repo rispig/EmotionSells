@@ -1,4 +1,4 @@
-#section-10, #section-12, #section-13 {
+#section-10, #section-12, #section-13, #section-14, #section-15 {
     padding: $spacing 0;
 
     @include mobile {
@@ -11,7 +11,7 @@
         }
     }
 
-    h3 strong, p strong {
+    h1 strong, h3 strong, p strong {
         font-weight: 900;
     }
 

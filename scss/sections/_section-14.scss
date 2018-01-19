@@ -1,0 +1,33 @@
+#section-14, #section-15 {
+    .light-text {
+        font-weight: 100;
+        font-family: "Lato-Light", sans-serif;
+
+        i {
+            font-family: "CormorantGaramond-Italic";
+        }
+    }
+
+    .huge-text {
+        font-size: 66px;
+        font-family: "Lato-Light", sans-serif;
+        font-weight: 300;
+    }
+
+    .column ~ .column {
+        @include tablet {
+            border-left: 1px solid $black;
+        }
+
+        @include mobile {
+            margin-top: 30px;
+        }
+    }
+
+    button {
+        margin-top: 70px;
+        width: 217px;
+        color: $white;
+        border-radius: 0 !important;
+    }
+}

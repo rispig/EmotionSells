@@ -22,18 +22,4 @@
             margin-bottom: $mobile-margin;
         }
     }
-
-    button.btn {
-        margin-bottom: $margin;
-        height: $button-height;
-        width: $button-width;
-        border-radius: $button-radius;
-
-        @include mobile {
-            margin-bottom: $mobile-margin;
-            height: $mobile-button-height;
-            width: $mobile-button-width;
-            border-radius: $mobile-button-radius;
-        }
-    }
 }

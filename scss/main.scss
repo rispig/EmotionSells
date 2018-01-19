@@ -29,6 +29,20 @@ section {
         }
     }
 
+    button.btn {
+        margin-bottom: 30px;
+        height: $button-height;
+        width: $button-width;
+        border-radius: $button-radius;
+
+        @include mobile {
+            margin-bottom: 30px;
+            height: $mobile-button-height;
+            width: $mobile-button-width;
+            border-radius: $mobile-button-radius;
+        }
+    }
+
     ul {
         list-style-image: url("assets/img/common/tick-desktop.png");
         margin-left: 32px;
