@@ -1,4 +1,4 @@
-#section-10, #section-12 {
+#section-10, #section-12, #section-13 {
     padding: $spacing 0;
 
     @include mobile {
@@ -7,7 +7,7 @@
 
     >.columns + .columns {
         @include tablet {
-            margin-top: 100px;
+            margin-top: $spacing;
         }
     }
 

@@ -15,31 +15,27 @@
         }
     }
 
-    .is-timer {
-        position: absolute;
-    }
-
     >div:first-child {
         position: relative;
         background-color: rgba($blue, 0.8);
 
         @include tablet {
-            &::before {
+            &::before, &::after {
                 content: "";
                 background-color: inherit;
                 left: 0;
-                height: calc(#{$spacing} - 0.75em);
+                height: $spacing;
                 width: 100%;
                 position: absolute;
             }
         }
 
         @include mobile {
-            &::before {
+            &::before, &::after {
                 content: "";
                 background-color: inherit;
                 left: 0;
-                height: calc(#{$mobile-spacing} - 0.75em);
+                height: $mobile-spacing;
                 width: 100%;
                 position: absolute;
             }
@@ -47,13 +43,21 @@
 
         @include tablet {
             &::before {
-                top: calc(0.75em - #{$spacing});
+                top: -$spacing;
+            }
+
+            &::after {
+                bottom: -$spacing;
             }
         }
 
         @include mobile {
             &::before {
-                top: calc(0.75em - #{$mobile-spacing});
+                top: -$mobile-spacing;
+            }
+
+            &::after {
+                bottom: -$mobile-spacing;
             }
         }
     }

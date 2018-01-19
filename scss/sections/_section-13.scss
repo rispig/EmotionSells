@@ -1,0 +1,66 @@
+#section-13 {
+    min-height: 700px !important;
+    height: 700px !important;
+
+    padding-top: 0 !important;
+
+    @include tablet {
+        background: url("assets/img/section-13/desktop.png") rgba($timer-bg, 0.8) center / cover;
+
+        @include image-2x {
+            background: url("assets/img/section-13/desktop@2x.png") rgba($timer-bg, 0.8) center / cover;
+        }
+    }
+
+    @include mobile {
+        background: url("assets/img/section-13/mobile.png") rgba($timer-bg, 0.8) 35% / cover;
+
+        @include image-2x {
+            background: url("assets/img/section-13/mobile@2x.png") rgba($timer-bg, 0.8) 35% / cover;
+        }
+    }
+
+    >div:first-child {
+        background-color: rgba($timer-bg, 0.8);
+        min-height: 700px;
+        height: 700px;
+
+        @include tablet {
+            padding-top: $spacing;
+        }
+
+        @include mobile {
+            padding-top: $mobile-spacing;
+        }
+    }
+
+    h3 {
+        margin-top: -5px;
+    }
+
+    @include tablet {
+        img {
+            height: 75px;
+            width: 85px;
+        }
+    }
+
+    @include tablet {
+        >div:first-child >div:first-child {
+            margin-bottom: 140px !important;
+        }
+    }
+
+    @include mobile {
+        >div:first-child >div:first-child {
+            margin-bottom: 85px !important;
+        }
+    }
+
+    .is-timer {
+        position: absolute;
+        bottom: -$timer-height;
+        width: 100%;
+        z-index: 10;
+    }
+}

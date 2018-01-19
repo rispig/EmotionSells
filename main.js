@@ -47,7 +47,14 @@ function countdownLoop() {
   }, 1000);
 }
 
+
+function checkBonuses() {
+
+}
+
 window.onload = () => {
   countdownLoop();
+
+  checkBonuses();
 };
 

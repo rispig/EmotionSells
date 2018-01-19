@@ -17,6 +17,7 @@ section {
     }
 
     padding: 0 $content-margin;
+    position: relative;
 
     @include mobile {
         padding: 0 $mobile-content-margin;
