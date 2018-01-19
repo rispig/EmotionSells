@@ -26,56 +26,6 @@ section {
         &.is-gapless {
             margin-bottom: 0 !important;
         }
-
-        &.has-timer  > .column:first-child {
-            @include tablet {
-                height: calc(100vh - #{$timer-height});
-            }
-        }
-
-        &.has-timer > .column.is-timer {
-            height: $timer-height;
-            background-color: $timer-bg;
-            position: relative;
-
-            @include mobile {
-                height: $mobile-timer-height;
-            }
-        }
-
-        &.has-timer > .column.is-timer .columns {
-            height: 100%;
-        }
-
-        &.has-timer > .column.is-timer::before {
-            width: $content-margin;
-            content: "";
-            position: absolute;
-            top: 0;
-            background-color: $timer-bg;
-            height: 100%;
-            left: calc(-1 * #{$content-margin});
-
-            @include mobile {
-                width: $mobile-content-margin;
-                left: calc(-1 * #{$mobile-content-margin});
-            }
-        }
-
-        &.has-timer > .column.is-timer::after {
-            width: $content-margin;
-            content: "";
-            position: absolute;
-            top: 0;
-            background-color: $timer-bg;
-            height: 100%;
-            right: calc(-1 * #{$content-margin});
-
-            @include mobile {
-                width: $mobile-content-margin;
-                right: calc(-1 * #{$mobile-content-margin});
-            }
-        }
     }
 
     ul {
@@ -85,6 +35,103 @@ section {
         @include image-2x {
             list-style-image: url("assets/img/common/tick-desktop@2x.png");
         }
+    }
+
+    .has-timer  > .column:first-child {
+        @include tablet {
+            height: calc(100vh - #{$timer-height});
+        }
+    }
+
+    .has-timer > .column.is-timer {
+        height: $timer-height;
+        background-color: $timer-bg;
+        position: relative;
+
+        @include mobile {
+            height: $mobile-timer-height;
+        }
+    }
+
+    .has-timer > .column.is-timer .columns {
+        height: 100%;
+    }
+
+    .has-timer > .column.is-timer::before {
+        width: $content-margin;
+        content: "";
+        position: absolute;
+        top: 0;
+        background-color: $timer-bg;
+        height: 100%;
+        left: calc(-1 * #{$content-margin});
+
+        @include mobile {
+            width: $mobile-content-margin;
+            left: calc(-1 * #{$mobile-content-margin});
+        }
+    }
+
+    .has-timer > .column.is-timer::after {
+        width: $content-margin;
+        content: "";
+        position: absolute;
+        top: 0;
+        background-color: $timer-bg;
+        height: 100%;
+        right: calc(-1 * #{$content-margin});
+
+        @include mobile {
+            width: $mobile-content-margin;
+            right: calc(-1 * #{$mobile-content-margin});
+        }
+    }
+
+    .is-timer {
+        width: 100%;
+
+        .level-item {
+            margin: 0;
+        }
+
+        .timer-label {
+            font-family: "Cormorant Garamond";
+            font-style: italic;
+            text-align: center;
+
+            @include tablet {
+                margin-right: 38px;
+            }
+
+            @include mobile {
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+        }
+
+        .digits, .title {
+            font-weight: 100;
+        }
+
+        .digits {
+            font-size: 60px;
+
+            @include mobile {
+                font-size: 40px;
+            }
+        }
+
+        .title {
+            font-size: 15px;
+
+            @include mobile {
+                font-size: 11px;
+            }
+        }
+    }
+
+    .is-timer .level-item + .level-item {
+        border-left: 1px solid $white;
     }
 }
 

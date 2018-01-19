@@ -36,48 +36,4 @@
             border-radius: $mobile-button-radius;
         }
     }
-
-    .is-timer {
-        .level-item {
-            margin: 0;
-        }
-
-        .timer-label {
-            font-family: "Cormorant Garamond";
-            font-style: italic;
-
-            @include tablet {
-                margin-right: 38px;
-            }
-
-            @include mobile {
-                margin-top: 10px;
-                margin-bottom: 5px;
-            }
-        }
-
-        .digits, .title {
-            font-weight: 100;
-        }
-
-        .digits {
-            font-size: 60px;
-
-            @include mobile {
-                font-size: 40px;
-            }
-        }
-
-        .title {
-            font-size: 15px;
-
-            @include mobile {
-                font-size: 11px;
-            }
-        }
-    }
-
-    .is-timer .level-item + .level-item {
-        border-left: 1px solid $white;
-    }
 }

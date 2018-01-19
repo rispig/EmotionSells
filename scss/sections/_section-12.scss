@@ -1,0 +1,60 @@
+#section-12 {
+    @include tablet {
+        background: url("assets/img/section-12/bg.png") $blue center / cover;
+
+        @include image-2x {
+            background: url("assets/img/section-12/bg@2x.png") $blue center / cover;
+        }
+    }
+
+    @include mobile {
+        background: url("assets/img/section-12/bg.png") $blue center / cover;
+
+        @include image-2x {
+            background: url("assets/img/section-12/bg@2x.png") $blue center / cover;
+        }
+    }
+
+    .is-timer {
+        position: absolute;
+    }
+
+    >div:first-child {
+        position: relative;
+        background-color: rgba($blue, 0.8);
+
+        @include tablet {
+            &::before {
+                content: "";
+                background-color: inherit;
+                left: 0;
+                height: calc(#{$spacing} - 0.75em);
+                width: 100%;
+                position: absolute;
+            }
+        }
+
+        @include mobile {
+            &::before {
+                content: "";
+                background-color: inherit;
+                left: 0;
+                height: calc(#{$mobile-spacing} - 0.75em);
+                width: 100%;
+                position: absolute;
+            }
+        }
+
+        @include tablet {
+            &::before {
+                top: calc(0.75em - #{$spacing});
+            }
+        }
+
+        @include mobile {
+            &::before {
+                top: calc(0.75em - #{$mobile-spacing});
+            }
+        }
+    }
+}
