@@ -1,13 +1,13 @@
 #section-9 {
     background-color: $grey;
-    padding: 100px 0;
+    padding: $spacing 0;
 
     @include mobile {
-        padding: 50px 0;
+        padding: $mobile-spacing 0;
     }
 
     .columns  + .columns {
-        margin-top: 50px;
+        margin-top: $mobile-spacing;
     }
 
     .column {
