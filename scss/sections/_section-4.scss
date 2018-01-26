@@ -1,15 +1,4 @@
-#section-4 {
-    $spacing: 100px;
-    $mobile-spacing: $spacing / 2;
-
-    padding-top: $spacing;
-    padding-bottom: $spacing;
-
-    @include mobile {
-        padding-top: $mobile-spacing;
-        padding-bottom: $mobile-spacing;
-    }
-
+.section-4 {
     .title, .circle-img {
         margin-bottom: $spacing;
 

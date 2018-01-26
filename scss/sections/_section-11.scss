@@ -1,4 +1,4 @@
-#section-11 {
+.section-11 {
     @include tablet {
         padding: $spacing 0;
         background: url("assets/img/section-11/desktop.png") top / cover;
@@ -22,10 +22,6 @@
             padding: $mobile-spacing 0;
             background-color: rgba($off-white, 0.9);
         }
-    }
-
-    strong {
-        font-weight: 900;
     }
 
     .first-block {

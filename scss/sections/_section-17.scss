@@ -1,4 +1,4 @@
-#section-17 {
+.section-17 {
     margin-bottom: 219px;
 
     .one-on-one img {
@@ -12,11 +12,10 @@
     }
 
     .is-timer {
-        @extend .blue-background;
-        position: absolute;
-        bottom: -219px;
-        width: 100%;
-        z-index: 10;
-        height: 219px;
+        position: absolute !important;
+        bottom: -219px !important;
+        width: 100% !important;
+        z-index: 10 !important;
+        height: 219px !important;
     }
 }

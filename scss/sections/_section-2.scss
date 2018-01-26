@@ -1,17 +1,5 @@
-#section-2 {
-    $padding: 80px;
-
-    padding-top: $padding;
-    padding-bottom: $padding;
-
-    @include mobile {
-        padding-top: $padding / 2;
-        padding-bottom: $padding / 2;
-    }
-
-    strong {
-        font-weight: 900;
-    }
+.section-2 {
+    @include section-padding(80px);
 
     .title {
         color: $blue;

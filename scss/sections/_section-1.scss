@@ -1,25 +1,12 @@
-#section-1 {
+.section-1 {
     $title-margin: 40px;
     $margin: 30px;
 
-    $mobile-title-margin: $title-margin;
-    $mobile-margin: $margin;
-
     h2.title {
-        margin-top: $title-margin;
-
-        @include mobile {
-            margin-top: $mobile-title-margin;
-        }
+        margin-top: $title-margin !important;
     }
 
     .video-container {
-        margin-top: $margin;
-        margin-bottom: $margin;
-
-        @include mobile {
-            margin-top: $mobile-margin;
-            margin-bottom: $mobile-margin;
-        }
+        margin: $margin auto !important;
     }
 }

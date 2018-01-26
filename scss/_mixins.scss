@@ -6,3 +6,11 @@
         @content;
     }
 }
+
+@mixin section-padding($pad) {
+    padding: $pad 0;
+
+    @include mobile {
+        padding: ($pad / 2) 0;
+    }
+}

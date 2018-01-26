@@ -1,5 +1,7 @@
-#section-16 {
-    background-image: linear-gradient(to left, #71bdef, #147bbd);
+.section-16 {
+    $light-blue: #71bdef;
+    $darker-blue: #147bbd;
+    background-image: linear-gradient(to left, $light-blue, $darker-blue);
 
     @include tablet {
         min-height: 583px;

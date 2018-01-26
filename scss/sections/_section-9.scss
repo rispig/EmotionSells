@@ -1,14 +1,5 @@
-#section-9 {
+.section-9 {
     background-color: $grey;
-    padding: $spacing 0;
-
-    @include mobile {
-        padding: $mobile-spacing 0;
-    }
-
-    .columns  + .columns {
-        margin-top: $mobile-spacing;
-    }
 
     .column {
         background-color: $white;

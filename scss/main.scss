@@ -11,16 +11,36 @@ html, body {
     overflow-x: hidden;
 }
 
+.padded {
+    @include section-padding($spacing);
+}
+
+.inner-pad {
+    >.columns + .columns {
+        @include tablet {
+            margin-top: $spacing;
+        }
+    }
+}
+
+.bold-strongs {
+    h1 strong, h3 strong, p strong {
+        font-weight: 900;
+    }
+}
+
 section {
     @include tablet {
         min-height: 100vh;
     }
 
-    padding: 0 $content-margin;
+    padding-left: $content-margin;
+    padding-right: $content-margin;
     position: relative;
 
     @include mobile {
-        padding: 0 $mobile-content-margin;
+        padding-left: $mobile-content-margin;
+        padding-right: $mobile-content-margin;
     }
 
     .columns {
@@ -121,12 +141,12 @@ section {
             text-align: center;
 
             @include tablet {
-                margin-right: 38px;
+                margin-right: 38px !important;
             }
 
             @include mobile {
-                margin-top: 10px;
-                margin-bottom: 5px;
+                padding-top: 10px !important;
+                padding-bottom: 5px !important;
             }
         }
 
@@ -176,15 +196,19 @@ section {
 }
 
 .red-background {
-    @extend .dark-background;
+    background-color: $red !important;
 
-    background-color: $red;
+    * {
+        color: $black;
+    }
 }
 
 .blue-background {
-    @extend .dark-background;
+    background-color: $blue !important;
 
-    background-color: $blue;
+    * {
+        color: $white;
+    }
 }
 
 .title {

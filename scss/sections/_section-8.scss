@@ -1,16 +1,12 @@
-#section-8 {
-    padding: $spacing 0 0;
-
-    @include mobile {
-        padding: $mobile-spacing 15%;
-    }
-
+.section-8 {
     background-color: $light-blue;
     text-align: center;
-
-    h1 {
-        font-weight: 900;
+    
+    @include mobile {
+        padding: $mobile-spacing 5% !important;
     }
+
+    padding-bottom: 0 !important;
 
     img {
         @include tablet {
