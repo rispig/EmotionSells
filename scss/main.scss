@@ -72,11 +72,11 @@ section {
         }
     }
 
-    .has-timer  > .column:first-child {
-        @include tablet {
-            height: calc(100vh - #{$timer-height});
-        }
-    }
+    // .has-timer  > .column:first-child {
+    //     @include tablet {
+    //         height: calc(100vh - #{$timer-height});
+    //     }
+    // }
 
     .has-timer > .column.is-timer {
         height: $timer-height;
@@ -139,14 +139,15 @@ section {
             font-family: "Cormorant Garamond";
             font-style: italic;
             text-align: center;
+            line-height: 1.2;
 
             @include tablet {
                 margin-right: 38px !important;
             }
 
             @include mobile {
-                padding-top: 10px !important;
-                padding-bottom: 5px !important;
+                margin-top: 10px !important;
+                margin-bottom: 5px !important;
             }
         }
 

@@ -1,9 +1,9 @@
 .section-5 {
     @include tablet {
-        background: url("assets/img/section-5/desktop.jpg") center / cover;
+        background: #f2f3f7 url("assets/img/section-5/desktop.png") center / cover;
 
         @include image-2x {
-            background: url("assets/img/section-5/desktop@2x.jpg") center / cover;
+            background: #f2f3f7 url("assets/img/section-5/desktop@2x.png") center / cover;
         }
     }
 

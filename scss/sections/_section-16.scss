@@ -2,6 +2,7 @@
     $light-blue: #71bdef;
     $darker-blue: #147bbd;
     background-image: linear-gradient(to left, $light-blue, $darker-blue);
+    box-sizing: content-box;
 
     @include tablet {
         min-height: 583px;

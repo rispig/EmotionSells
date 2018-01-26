@@ -1,0 +1,26 @@
+.section-19 {
+    h1, h2 {
+        font-family: lato-black;
+        line-height: 1.1;
+    }
+
+    h1 {
+        margin-bottom: 90px;
+    }
+
+    h2 {
+        margin-bottom: 60px;
+    }
+
+    li {
+        padding-left: 10px;
+    }
+
+    .last-title {
+        margin-top: 90px;
+
+        strong {
+            color: $blue !important;
+        }
+    }
+}

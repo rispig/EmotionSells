@@ -1,7 +1,5 @@
 .bonus {
-    min-height: 700px !important;
-    height: 700px !important;
-    margin-bottom: $timer-height;
+    margin-bottom: $timer-height - $spacing;
 
     padding-top: 0 !important;
 
@@ -23,15 +21,15 @@
 
     >div:first-child {
         background-color: rgba($timer-bg, 0.8);
-        min-height: 700px;
-        height: 700px;
 
         @include tablet {
             padding-top: $spacing;
+            padding-bottom: $spacing;
         }
 
         @include mobile {
             padding-top: $mobile-spacing;
+            padding-bottom: $mobile-spacing;
         }
     }
 
@@ -60,7 +58,7 @@
 
     .is-timer {
         position: absolute !important;
-        bottom: -$timer-height !important;
+        bottom: -($timer-height - $spacing) !important;
         width: 100% !important;
         z-index: 10 !important;
     }

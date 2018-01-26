@@ -18,6 +18,10 @@
         }
     }
 
+    .circles {
+        justify-content: space-between;
+    }
+
     .text-container {
         @include mobile {
             margin-top: $mobile-spacing;
