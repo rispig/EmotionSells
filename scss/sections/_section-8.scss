@@ -1,7 +1,7 @@
 .section-8 {
     background-color: $light-blue;
     text-align: center;
-    
+
     @include mobile {
         padding: $mobile-spacing 5% !important;
     }

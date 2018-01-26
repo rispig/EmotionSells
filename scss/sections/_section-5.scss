@@ -1,9 +1,11 @@
 .section-5 {
+    $white-overlay: #f2f3f7;
+
     @include tablet {
-        background: #f2f3f7 url("assets/img/section-5/desktop.png") center / cover;
+        background: $white-overlay url("assets/img/section-5/desktop.png") center / cover;
 
         @include image-2x {
-            background: #f2f3f7 url("assets/img/section-5/desktop@2x.png") center / cover;
+            background: $white-overlay url("assets/img/section-5/desktop@2x.png") center / cover;
         }
     }
 

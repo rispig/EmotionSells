@@ -1,0 +1,40 @@
+.testa {
+    h1 {
+        @include mobile {
+            text-align: center;
+        }
+
+        strong {
+            display: flex;
+
+            span:first-child {
+                font-family: "CormorantGaramond-bold";
+
+                @include tablet {
+                    font-size: 151pt;
+                    margin-top: -55px;
+                }
+            }
+        }
+    }
+
+    &.section-20 {
+        background-color: $light-blue;
+    }
+
+    &.section-21 {
+        background-color: $bluer;
+    }
+
+    &.section-22 {
+        background-color: $real-grey;
+    }
+
+    &.section-23 {
+        background-color: $light-grey;
+    }
+
+    &.section-24 {
+        background-color: $not-really-grey;
+    }
+}

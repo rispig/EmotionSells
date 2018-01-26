@@ -1,7 +1,5 @@
 .section-16 {
-    $light-blue: #71bdef;
-    $darker-blue: #147bbd;
-    background-image: linear-gradient(to left, $light-blue, $darker-blue);
+    background-image: linear-gradient(to left, $light-blue, $blue);
     box-sizing: content-box;
 
     @include tablet {
