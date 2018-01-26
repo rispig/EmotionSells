@@ -1,0 +1,14 @@
+.section-25 {
+    position: relative;
+    .is-timer {
+        .no-top-pad {
+            color: $blue;
+            font-weight: 600;
+            font-family: lato-semibold;
+        }
+
+        .level-item + .level-item {
+            border-left: 1px solid $black !important;
+        }
+    }
+}
