@@ -1,4 +1,4 @@
-const END_TIME = 1518483600000; // February 12, 8:00PM 2018
+const END_TIME = 1518562800000; // February 13, 6:00PM 2018
 
 function breakdownTimeLeft(timeLeft) {
   let hours;
