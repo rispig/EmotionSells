@@ -2,6 +2,23 @@
     $title-margin: 40px;
     $margin: 30px;
 
+    @include tablet {
+        min-height: calc(100vh - #{$timer-height});
+    }
+
+    @include mobile {
+        min-height: calc(80vh - #{$timer-height});
+    }
+
+    margin-bottom: $timer-height;
+
+    .is-timer {
+        position: absolute !important;
+        bottom: -$timer-height;
+        left: 0;
+        width: 100%;
+    }
+
     h2.title {
         margin-top: $title-margin !important;
     }
@@ -9,4 +26,5 @@
     .video-container {
         margin: $margin auto !important;
     }
+
 }
