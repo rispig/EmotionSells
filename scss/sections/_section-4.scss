@@ -63,6 +63,12 @@
         }
     }
 
+    @include tablet {
+        .move-back {
+            margin-left: -1em;
+        }
+    }
+
     .damasio-container {
         margin-top: $spacing;
 

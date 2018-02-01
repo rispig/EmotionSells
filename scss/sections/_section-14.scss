@@ -24,6 +24,12 @@
         }
     }
 
+    @include tablet {
+        .first-block {
+            margin-top: 50px !important; 
+        }
+    }
+
     button {
         margin-top: 70px;
         width: 217px;

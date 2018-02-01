@@ -15,6 +15,14 @@
         }
     }
 
+    @include tablet {
+        .text-valign {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+    }
+
     >div:first-child {
         position: relative;
         background-color: rgba($blue, 0.8);
