@@ -1,4 +1,9 @@
-var END_TIME = 1518562800000; // February 13, 6:00PM 2018
+var END_TIME = 1518562800000;
+var PRICE_CHANGE = 1518116400000;
+var FIRST_BONUS = 1518188100000;
+var SECOND_BONUS = 1518274800000;
+var THIRD_BONUS = 1518411600000;
+
 
 function breakdownTimeLeft(timeLeft) {
   var hours;
@@ -78,10 +83,53 @@ function updateTimers(data) {
 }
 
 function countdownLoop() {
-  if (END_TIME - Date.now() <= 0) {
+  if (END_TIME - Date.now() <= -2 * 60 * 60 * 1000) {
+    location.href="https://getuplift.co/cro-training";
+    return;
+  }
+  else if (END_TIME - Date.now() <= 0) {
     return updateTimers();
   }
   
+  if (PRICE_CHANGE - Date.now() <= 0) {
+    var p = document.querySelectorAll('.pricing.first-24h');
+    for (var i=0; i< p.length; i++) {
+      var e = p[i];
+      e.style.display = "none";
+    }
+
+    var p2 = document.querySelectorAll('.pricing.after-24h');
+    for (var i=0; i< p2.length; i++) {
+      var e = p2[i];
+      e.style.display = "";
+    }
+  }
+
+  if (FIRST_BONUS - Date.now() <= 0 && THIRD_BONUS - Date.now() > 0) {
+    var b1 = document.querySelectorAll('.bonus-a');
+    for (var i=0; i< b1.length; i++) {
+      var e = b1[i];
+      e.style.display = "";
+    }
+  }
+
+  if (SECOND_BONUS - Date.now() <= 0 && THIRD_BONUS - Date.now() > 0) {
+    var b2 = document.querySelectorAll('.bonus-b');
+    for (var i=0; i< b2.length; i++) {
+      var e = b2[i];
+      e.style.display = "";
+    }
+  }
+
+  if (THIRD_BONUS - Date.now() <= 0) {
+    var b3 = document.querySelectorAll('.bonus-c');
+    for (var i=0; i< b3.length; i++) {
+      var e = b3[i];
+      e.style.display = "";
+    }
+  }
+  
+
   return setTimeout(function timeout() {
     updateTimers(breakdownTimeLeft(END_TIME - Date.now()));
     countdownLoop();  
