@@ -2,7 +2,7 @@
     background-color: $light-grey;
 
     h3 {
-        font-family: lato-medium !important;
+        font-family: lato-medium, roboto-medium, sans-serif !important;
     }
 
     p {
@@ -11,6 +11,6 @@
 
     strong {
         font-weight: 900;
-        font-family: lato-black;
+        font-family: lato-black, roboto-black, sans-serif;
     }
 }

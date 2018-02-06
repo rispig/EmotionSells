@@ -7,7 +7,7 @@
 @import "sections/all";
 
 html, body {
-    font-family: Lato, sans-serif;
+    font-family: Lato, Roboto, sans-serif;
     overflow-x: hidden;
 }
 
@@ -167,7 +167,7 @@ section {
         }
 
         .level-item * {
-            font-family: Lato-Thin, sans-serif;
+            font-family: Lato-Thin, Roboto-Thin, sans-serif;
             font-weight: 100;
         }
 
@@ -249,7 +249,7 @@ section {
 }
 
 .title {
-    font-family: "Lato";
+    font-family: Lato, Roboto, sans-sarif;
 }
 
 .btn {
