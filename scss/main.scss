@@ -48,6 +48,7 @@ html, body {
 
 .copyright {
     font-size: 14pt;
+
     a {
         color: $white !important;
         display: inline;
@@ -92,11 +93,15 @@ section {
     }
 
     @include tablet {
-        a.btn { line-height: $button-height; }
+        a.btn {
+            line-height: $button-height;
+        }
     }
 
     @include mobile {
-        a.btn { line-height: $mobile-button-height; }
+        a.btn {
+            line-height: $mobile-button-height;
+        }
     }
 
     ul {
