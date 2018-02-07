@@ -3,7 +3,7 @@
     $margin: 30px;
 
     @include tablet {
-        min-height: calc(100vh - #{$timer-height});
+        // min-height: calc(100vh - #{$timer-height});
     }
 
     @include mobile {

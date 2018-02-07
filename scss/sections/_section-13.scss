@@ -25,7 +25,7 @@
         @include tablet {
             padding-top: $spacing;
             padding-bottom: $spacing;
-            min-height: calc(100vh - (#{$timer-height} - (#{$timer-height} - #{$spacing})));
+            // min-height: calc(100vh - (#{$timer-height} - (#{$timer-height} - #{$spacing})));
         }
 
         @include mobile {

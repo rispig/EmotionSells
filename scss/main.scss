@@ -57,7 +57,7 @@ html, body {
 
 section {
     @include tablet {
-        min-height: 100vh;
+        // min-height: 100vh;
     }
 
     padding-left: $content-margin;

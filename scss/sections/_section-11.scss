@@ -8,6 +8,15 @@
         }
     }
 
+    @include widescreen {
+        padding: $spacing 0;
+        background: #eceeee url("assets/img/section-11/desktop.png") left / contain no-repeat;
+
+        @include image-2x {
+            background: #eceeee url("assets/img/section-11/desktop@2x.png") left / contain no-repeat;
+        }
+    }
+
     @include mobile {
         position: relative;
         background: url("assets/img/section-11/mobile.png") top / 100% no-repeat;
@@ -34,11 +43,19 @@
         @include tablet {
             margin-left: 400px;
         }
+
+        @include widescreen {
+            margin-left: 200px;
+        }
     }
 
     .third-block {
         @include tablet {
             margin-left: 100px;
+        }
+        
+        @include widescreen {
+            margin-left: 200px;
         }
     }
 }
