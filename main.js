@@ -83,11 +83,11 @@ function updateTimers(data) {
 }
 
 function countdownLoop() {
-  if (END_TIME - Date.now() <= -2 * 60 * 60 * 1000) {
-    location.href="https://getuplift.co/cro-training";
-    return;
-  }
-  else if (END_TIME - Date.now() <= 0) {
+  // if (END_TIME - Date.now() <= -2 * 60 * 60 * 1000) {
+  //   location.href="https://getuplift.co/cro-training";
+  //   return;
+  // }
+  if (END_TIME - Date.now() <= 0) {
     return updateTimers();
   }
   
