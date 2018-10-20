@@ -9845,8 +9845,14 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   margin-bottom: 160px;
 }
 @media screen and (max-width: 768px) {
-  .section-1 {
-    min-height: calc(80vh - 160px);
+  .section-1::after {
+    background-color: #147bbc !important;
+    content: "";
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
   }
 }
 .section-1 .is-timer {
@@ -9855,11 +9861,26 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   left: 0;
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  .section-1 .is-timer {
+    bottom: -190px;
+  }
+}
 .section-1 h2.title {
   margin-top: 40px !important;
 }
 .section-1 .video-container {
   margin: 30px auto !important;
+}
+.section-1 .btn {
+  margin-top: 20px;
+}
+@media screen and (min-width: 769px), print {
+  .section-1 .btn {
+    line-height: 24px;
+    font-size: 18px !important;
+    min-width: 265px !important;
+  }
 }
 
 .section-2 {
@@ -10144,14 +10165,9 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   margin-top: 0;
 }
 
-@media screen and (min-width: 769px), print {
-  .section-10 img {
-    width: 180px;
-  }
-}
 @media screen and (max-width: 768px) {
   .section-10 img {
-    width: 90px;
+    width: 180px;
   }
 }
 

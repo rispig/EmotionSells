@@ -2,21 +2,36 @@
     $title-margin: 40px;
     $margin: 30px;
 
+    margin-bottom: $timer-height;
+
     @include tablet {
         // min-height: calc(100vh - #{$timer-height});
     }
-
+    
     @include mobile {
-        min-height: calc(80vh - #{$timer-height});
+        // min-height: calc(100vh - (#{$timer-height} - 30px) );
+        // min-height: 100vh;
+        &::after{
+            background-color: $blue !important;
+            content: "";
+            height: 30px;
+            width: 100%;
+            position: absolute;
+            bottom:-30px;
+            left: 0;
+        }
     }
 
-    margin-bottom: $timer-height;
 
     .is-timer {
         position: absolute !important;
         bottom: -$timer-height;
         left: 0;
         width: 100%;
+        
+        @include mobile {
+            bottom: -$timer-height - 30px;
+        }
     }
 
     h2.title {
@@ -25,6 +40,16 @@
 
     .video-container {
         margin: $margin auto !important;
+    }
+
+    .btn {
+        margin-top: 20px;
+        
+        @include tablet {
+            line-height: 24px;
+            font-size: 18px !important;
+            min-width: 265px !important;
+        }
     }
 
 }

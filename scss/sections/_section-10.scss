@@ -1,10 +1,10 @@
 .section-10 {
     img {
-        @include tablet {
-            width: 180px;
-        }
+        // @include tablet {
+        //     // width: 180px;
+        // }
         @include mobile {
-            width: 90px;
+            width: 180px;
         }
     }
 }
