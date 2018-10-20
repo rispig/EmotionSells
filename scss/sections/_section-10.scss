@@ -3,5 +3,8 @@
         @include tablet {
             width: 180px;
         }
+        @include mobile {
+            width: 90px;
+        }
     }
 }

@@ -1,9 +1,11 @@
-var END_TIME = 1518570000000;
+var END_TIME = 1540951200000;
 var PRICE_CHANGE = 1518116400000;
-var FIRST_BONUS = 1518188100000;
-var SECOND_BONUS = 1518274800000;
-var THIRD_BONUS = 1518411600000;
-
+var FIRST_BONUS_ON = 1540353600000;
+var FIRST_BONUS_OFF = 1540494000000;
+var SECOND_BONUS_ON = 1540648800000;
+var SECOND_BONUS_OFF = 1540785600000;
+var THIRD_BONUS_ON = 1540819800000;
+var THIRD_BONUS_OFF = 1540951200000;
 
 function breakdownTimeLeft(timeLeft) {
   var hours;
@@ -83,29 +85,11 @@ function updateTimers(data) {
 }
 
 function countdownLoop() {
-  // if (END_TIME - Date.now() <= -2 * 60 * 60 * 1000) {
-  //   location.href="https://getuplift.co/cro-training";
-  //   return;
-  // }
-  if (END_TIME - Date.now() <= 0) {
-    return updateTimers();
-  }
-  
-  if (PRICE_CHANGE - Date.now() <= 0) {
-    var p = document.querySelectorAll('.pricing.first-24h');
-    for (var i=0; i< p.length; i++) {
-      var e = p[i];
-      e.style.display = "none";
-    }
-
-    var p2 = document.querySelectorAll('.pricing.after-24h');
-    for (var i=0; i< p2.length; i++) {
-      var e = p2[i];
-      e.style.display = "";
-    }
+  if (END_TIME <= Date.now()) {
+      return updateTimers();
   }
 
-  if (FIRST_BONUS - Date.now() <= 0 && THIRD_BONUS - Date.now() > 0) {
+  if (Date.now() >= FIRST_BONUS_ON && Date.now() <= FIRST_BONUS_OFF) {
     var b1 = document.querySelectorAll('.bonus-a');
     for (var i=0; i< b1.length; i++) {
       var e = b1[i];
@@ -113,7 +97,7 @@ function countdownLoop() {
     }
   }
 
-  if (SECOND_BONUS - Date.now() <= 0 && THIRD_BONUS - Date.now() > 0) {
+  if (Date.now() >= SECOND_BONUS_ON && Date.now() <= SECOND_BONUS_OFF) {
     var b2 = document.querySelectorAll('.bonus-b');
     for (var i=0; i< b2.length; i++) {
       var e = b2[i];
@@ -121,14 +105,13 @@ function countdownLoop() {
     }
   }
 
-  if (THIRD_BONUS - Date.now() <= 0) {
+  if (Date.now() >= THIRD_BONUS_ON && Date.now() <= THIRD_BONUS_OFF) {
     var b3 = document.querySelectorAll('.bonus-c');
     for (var i=0; i< b3.length; i++) {
       var e = b3[i];
       e.style.display = "";
     }
   }
-  
 
   return setTimeout(function timeout() {
     updateTimers(breakdownTimeLeft(END_TIME - Date.now()));

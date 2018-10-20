@@ -89,6 +89,16 @@ section {
             height: $mobile-button-height;
             width: $mobile-button-width;
             border-radius: $mobile-button-radius;
+            font-size: 24px !important;
+        }
+    }
+
+    a.btn-b {
+        width: $button-width - 40px;
+        @include mobile {
+            width: $mobile-button-width - 85px;
+            border-radius: $mobile-button-radius;
+            font-size: 24px !important;
         }
     }
 
@@ -257,9 +267,10 @@ section {
     font-family: Lato, sans-sarif;
 }
 
+
 .btn {
     @extend .red-background;
-
+    
     font-weight: 500;
     border: 0;
     outline: none;

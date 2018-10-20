@@ -9,6 +9,12 @@
         @include image-2x {
             background: url("assets/img/section-13/desktop@2x.png") rgba($timer-bg, 0.8) center / cover;
         }
+
+        .text-valign {
+            justify-content: flex-start;
+            align-items: center;
+            display: flex;
+        }
     }
 
     @include mobile {
