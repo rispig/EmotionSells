@@ -1419,7 +1419,7 @@ h2 {
 }
 @media (min-width: 1024px) {
   .emotion-section .subtitle {
-    font-size: 32px;
+    font-size: 30px;
   }
 }
 .emotion-section .check-list {
@@ -1433,7 +1433,7 @@ h2 {
 }
 @media (min-width: 1024px) {
   .emotion-section .check-list {
-    font-size: 26px;
+    font-size: 22px;
   }
 }
 @media (min-width: 1200px) {
@@ -2147,6 +2147,31 @@ h2 {
 @media (min-width: 1200px) {
   .community-section .caption-holder {
     margin-bottom: 53px;
+  }
+}
+.community-section .description-holder {
+  max-width: 897px;
+  margin-left: auto;
+  margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  .community-section .description-holder {
+    margin-bottom: 17px;
+    display: flex;
+  }
+}
+@media (min-width: 1200px) {
+  .community-section .description-holder {
+    margin-bottom: 40px;
+  }
+}
+.community-section .description-holder .img-holder {
+  max-width: 307px;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .community-section .description-holder .img-holder {
+    margin: 0 auto 25px;
   }
 }
 .community-section .subtitle {

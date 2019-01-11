@@ -650,7 +650,7 @@ h2 {
     margin-bottom: 20px;
     font-size: 20px;
     @include media('>=desktop') {
-      font-size: 32px;
+      font-size: 30px;
     }
   }
   .check-list {
@@ -660,7 +660,7 @@ h2 {
       margin-bottom: 45px;
     }
     @include media('>=desktop') {
-      font-size: 26px;
+      font-size: 22px;
     }
     @include media('>=widescreen') {
       padding-left: 81px;
@@ -1245,6 +1245,25 @@ h2 {
     margin-bottom: 25px;
     @include media('>=widescreen') {
       margin-bottom: 53px;
+    }
+  }
+  .description-holder {
+    max-width: 897px;
+    margin-left: auto;
+    margin-bottom: 25px;
+    @include media('>=tablet') {
+      margin-bottom: 17px;
+      display: flex;
+    }
+    @include media('>=widescreen') {
+      margin-bottom: 40px;
+    }
+    .img-holder {
+      max-width: 307px;
+      width: 100%;
+      @include media('<tablet') {
+        margin: 0 auto 25px;
+      }
     }
   }
   .subtitle {
