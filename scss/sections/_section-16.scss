@@ -1,9 +1,0 @@
-.section-16 {
-    background-image: linear-gradient(to left, $light-blue, $blue);
-    box-sizing: content-box;
-
-    @include tablet {
-        min-height: 583px;
-        height: 583px;
-    }
-}

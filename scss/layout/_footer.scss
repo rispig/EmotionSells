@@ -1,0 +1,46 @@
+.footer {
+	text-align: center;
+	background: #242228;
+	color: $white;
+	font-size: 12px;
+	padding: 21px  0 26px;
+}
+.policy-list {
+	@extend %listreset;
+	max-width: 400px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	li {
+		position: relative;
+		padding-right: 5px;
+		margin-right: 4px;
+		&:after {
+			position: absolute;
+			content: '|';
+			top: 0;
+			right: -1px;
+		}
+		&:last-child {
+			padding-right: 0;
+			margin-right: 0;
+			&:after {
+				display: none;
+			}
+		}
+	}
+	a {
+		color: $white;
+		@include animate(color);
+		&:hover {
+			color: $light-blue;
+		}
+	}
+}
+.copyright-wrap {
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 4px;
+	letter-spacing: 0.009em;
+	font-weight: 400;
+}
