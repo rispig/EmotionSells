@@ -272,11 +272,15 @@ h2 {
     }
   }
   .text-holder {
+    @include media('>=tablet') {
+      padding-left: 25px;
+    }
     @include media('>=desktop') {
       font-size: 22px;
     }
     @include media('>=widescreen') {
       width: 58%;
+      // padding-left: 94px;
     }
     p {
       line-height: 1.32;

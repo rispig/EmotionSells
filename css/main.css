@@ -968,6 +968,11 @@ h2 {
     margin: 0 auto 25px;
   }
 }
+@media (min-width: 768px) {
+  .explain-section .text-holder {
+    padding-left: 25px;
+  }
+}
 @media (min-width: 1024px) {
   .explain-section .text-holder {
     font-size: 22px;
